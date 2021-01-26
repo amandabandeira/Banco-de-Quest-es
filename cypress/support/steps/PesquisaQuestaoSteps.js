@@ -5,7 +5,7 @@ const pesquisaQuestaoPage = new PesquisaQuestaoPage
 
 
 Given("que navego para a página de busca", () => {
-	cy.botaoBuscar()
+	cy.botaoBrowse()
 });
 
 Then("digito {string} no campo de busca", (nomeCategoria) => {
@@ -13,7 +13,7 @@ Then("digito {string} no campo de busca", (nomeCategoria) => {
 });
 
 When("clico no botão de buscar", () => {
-  cy.buscarQuestao()
+  cy.botaoSearch()
 });
 
 Then("visualizo uma mensagem de erro com o texto {string}", (mensagem) => {

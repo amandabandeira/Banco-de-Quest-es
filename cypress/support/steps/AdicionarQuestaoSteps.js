@@ -8,19 +8,8 @@ Given("que navego para a página de login", () => {
 	adicionarQuestaoPage.paginaLogin()
 });
 
-When("realizo login no site", (dataTable) => {
-    dataTable.rawTable.slice(1).forEach(
-        function(data){
-
-        adicionarQuestaoPage.realizarLoginnome(data[0])
-        adicionarQuestaoPage.realizarLoginsenha(data[1])
-
-        }
-    )
-});
-
-When("clico no botao submit", () => {
-	adicionarQuestaoPage.botaoSignIn()
+When("realizo o login no site", () => {
+   cy.login()
 });
 
 When("clico no botao add new questions", () => {

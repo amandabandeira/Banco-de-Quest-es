@@ -5,7 +5,7 @@ const itensTabelaCategoriaPage = new ItensTabelaCategoriaPage
 
 
 Given("que navego para a página de busca", () => {
-	cy.botaoBuscar()
+	cy.botaoBrowse()
 });
 
 Then("digito {string} no campo de busca", (nomeCategoria) => {
@@ -17,7 +17,7 @@ Then("seleciono {string}", (tipo) => {
 });
 
 When("clico no botão de buscar", () => {
-  cy.buscarQuestao()
+  cy.botaoSearch()
 });
 
 Then("a listagem de questao deve ter 25 itens", () => {

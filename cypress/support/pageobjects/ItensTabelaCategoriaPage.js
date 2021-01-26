@@ -7,11 +7,11 @@ const itensTabelaCategoriaElements = new ItensTabelaCategoriaElements
 class ItensTabelaCategoriaPage{
 
     selecionarPorTipo(tipo){
-        cy.get(itensTabelaCategoriaElements.cbkTipo).select(tipo)
+        cy.get(itensTabelaCategoriaElements.cbkTipoQuestao).select(tipo)
     }
 
     validarQuantidadeItens(){
-        cy.get(itensTabelaCategoriaElements.nomeTabela).its('length').should('eq',25)
+        cy.get(itensTabelaCategoriaElements.nomeTabelaQuestao).its('length').should('eq',25)
     }
 
     validarPaginacao(){

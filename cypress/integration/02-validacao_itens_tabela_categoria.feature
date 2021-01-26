@@ -2,7 +2,7 @@
 Feature: Busca no Banco de Questões
 
     
-Scenario: Busca de questâo pela categoria e validar que a listagems possui 25 itens
+Scenario: Busca de questâo pela categoria e validar que a listagems possui 25 itens e que possui paginacao na página
 
 Given que navego para a página de busca
 And digito 'Science: Computers' no campo de busca

@@ -1,7 +1,7 @@
 class ItensTabelaCategoriaElements{
 
-    cbkTipo = 'select'
-    nomeTabela = '.table > tbody >tr'
+    cbkTipoQuestao = 'select'
+    nomeTabelaQuestao = '.table > tbody >tr'
     listaPaginacao = 'ul.pagination.pagination-lg>li:eq(0)'
 
 }

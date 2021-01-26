@@ -19,7 +19,13 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-Cypress.Commands.add('botaoBuscar',()=>{
+Cypress.Commands.add('login',()=>{
+    cy.get('#username').type('Teste01')
+    cy.get('#password').type('Completo25@')
+    cy.get('form > div:eq(1) > button').click()
+})
+
+Cypress.Commands.add('botaoBrowse',()=>{
     cy.visit(Cypress.config().baseUrlBusca)
 })
 
@@ -27,7 +33,7 @@ Cypress.Commands.add('selecionarCategoria',(nomeCategoria)=>{
     cy.get('#query').type(nomeCategoria)
 })
 
-Cypress.Commands.add('buscarQuestao',()=>{
+Cypress.Commands.add('botaoSearch',()=>{
     cy.get('.form-inline > .text-center > button').click()
 })
 

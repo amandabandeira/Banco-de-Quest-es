@@ -1,2 +1,8 @@
-# Banco-de-Quest-es
-Teste utilizando a ferramenta de automação Cypress 
+Processo seletivo CI&t : Automatizar o site opentdb 
+
+
+Descrição
+Esta automação tem por objetivo realizar 
+
+
+

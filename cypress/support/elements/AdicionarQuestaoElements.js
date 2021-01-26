@@ -1,8 +1,6 @@
 class AdicionarQuestaoElements{
 
-    inputUserName = '#username'
-    inputPassword = '#password'
-    btnSignIn = 'form > div:eq(1) > button'
+    
 
     cbkCategoria = 'select#trivia_category'
     cbkTipo = 'select#trivia_type'
