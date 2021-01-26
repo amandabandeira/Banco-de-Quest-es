@@ -19,7 +19,7 @@
   "homepage": "https://github.com/amandabandeira/Banco-de-Quest-es#readme",
   "devDependencies": {
     "cypress": "4.10.0",
-    "cypress-cucumber-preprocessor": "^4.0.0"
+    "cypress-cucumber-preprocessor": "4.0.0"
   },
   "cypress-cucumber-preprocessor":{
     "step_definitions": "cypress/support/steps"
