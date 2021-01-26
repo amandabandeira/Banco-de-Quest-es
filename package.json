@@ -1,0 +1,27 @@
+{
+  "name": "Banco-de-Quest-es",
+  "version": "1.0.0",
+  "description": "Teste utilizando a ferramenta de automação Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandabandeira/Banco-de-Quest-es.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandabandeira/Banco-de-Quest-es/issues"
+  },
+  "homepage": "https://github.com/amandabandeira/Banco-de-Quest-es#readme",
+  "devDependencies": {
+    "cypress": "4.10.0",
+    "cypress-cucumber-preprocessor": "^4.0.0"
+  },
+  "cypress-cucumber-preprocessor":{
+    "step_definitions": "cypress/support/steps"
+  }
+}
