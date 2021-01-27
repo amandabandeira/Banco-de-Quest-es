@@ -1,0 +1,253 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Busca no Banco de Questões",
+    "line": 2,
+    "id": "busca-no-banco-de-questões",
+    "tags": [],
+    "uri": "01-busca_questao_inexistente.feature",
+    "elements": [
+      {
+        "id": "busca-no-banco-de-questões;busca-por-questão-inexistente",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Busca por questão inexistente",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que navego para a página de busca",
+            "result": {
+              "status": "passed",
+              "duration": 5967000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "digito 'Science: Computers' no campo de busca",
+            "result": {
+              "status": "passed",
+              "duration": 808000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "clico no botão de buscar",
+            "result": {
+              "status": "passed",
+              "duration": 2642000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "visualizo uma mensagem de erro com o texto 'No questions found.'",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Busca no Banco de Questões",
+    "line": 2,
+    "id": "busca-no-banco-de-questões",
+    "tags": [],
+    "uri": "02-validacao_itens_tabela_categoria.feature",
+    "elements": [
+      {
+        "id": "busca-no-banco-de-questões;busca-de-questâo-pela-categoria-e-validar-que-a-listagems-possui-25-itens-e-que-possui-paginacao-na-página",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Busca de questâo pela categoria e validar que a listagems possui 25 itens e que possui paginacao na página",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que navego para a página de busca",
+            "result": {
+              "status": "passed",
+              "duration": 4971000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "digito 'Science: Computers' no campo de busca",
+            "result": {
+              "status": "passed",
+              "duration": 954000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "seleciono 'Category'",
+            "result": {
+              "status": "passed",
+              "duration": 330000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "clico no botão de buscar",
+            "result": {
+              "status": "passed",
+              "duration": 3152000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "a listagem de questao deve ter 25 itens",
+            "result": {
+              "status": "passed",
+              "duration": 273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "o controle de paginacao deve ser exibido",
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Adicionar uma nova questão no banco de questões",
+    "line": 1,
+    "id": "adicionar-uma-nova-questão-no-banco-de-questões",
+    "tags": [],
+    "uri": "03-adicionar_nova_questao.feature",
+    "elements": [
+      {
+        "id": "adicionar-uma-nova-questão-no-banco-de-questões;adicionar-uma-nova-questao",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Adicionar uma nova questao",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que navego para a página de login",
+            "result": {
+              "status": "passed",
+              "duration": 5419000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "realizo o login no site",
+            "result": {
+              "status": "passed",
+              "duration": 4445000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "clico no botao add new questions",
+            "result": {
+              "status": "passed",
+              "duration": 1274000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "categoria",
+                      "tipo",
+                      "dificuldade",
+                      "questao",
+                      "questaoCorreta",
+                      "questaoIncorreta1",
+                      "questaoIncorreta2",
+                      "questaoIncorreta3",
+                      "referencia"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sports",
+                      "Multiple Choice",
+                      "Medium",
+                      "Neymar é jogador de qual time?",
+                      "paris saint germain",
+                      "Santos",
+                      "Brazil",
+                      "Argentina",
+                      "Teste"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "preencho os campos",
+            "result": {
+              "status": "passed",
+              "duration": 6324000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "clico para salvar uma nova questao",
+            "result": {
+              "status": "passed",
+              "duration": 2380000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "a mensagem \"Success:  You have successfully submitted a trivia question!\" é exibida",
+            "result": {
+              "status": "passed",
+              "duration": 64000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

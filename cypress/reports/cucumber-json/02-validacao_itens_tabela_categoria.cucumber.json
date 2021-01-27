@@ -1,0 +1,82 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Busca no Banco de Questões",
+    "line": 2,
+    "id": "busca-no-banco-de-questões",
+    "tags": [],
+    "uri": "02-validacao_itens_tabela_categoria.feature",
+    "elements": [
+      {
+        "id": "busca-no-banco-de-questões;busca-de-questâo-pela-categoria-e-validar-que-a-listagems-possui-25-itens-e-que-possui-paginacao-na-página",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Busca de questâo pela categoria e validar que a listagems possui 25 itens e que possui paginacao na página",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que navego para a página de busca",
+            "result": {
+              "status": "passed",
+              "duration": 4971000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "digito 'Science: Computers' no campo de busca",
+            "result": {
+              "status": "passed",
+              "duration": 954000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "seleciono 'Category'",
+            "result": {
+              "status": "passed",
+              "duration": 330000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "clico no botão de buscar",
+            "result": {
+              "status": "passed",
+              "duration": 3152000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "a listagem de questao deve ter 25 itens",
+            "result": {
+              "status": "passed",
+              "duration": 273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "o controle de paginacao deve ser exibido",
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

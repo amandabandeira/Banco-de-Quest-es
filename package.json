@@ -4,7 +4,10 @@
   "description": "Teste utilizando a ferramenta de automação Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "report:merge": "mochawesome-merge > full_report.json",
+    "report:mocha": "marge full_report.json",
+    "report:clean": "rm -rf mochawesome-report full_report.json"
   },
   "repository": {
     "type": "git",
@@ -18,10 +21,22 @@
   },
   "homepage": "https://github.com/amandabandeira/Banco-de-Quest-es#readme",
   "devDependencies": {
+    "cucumber-html-reporter": "^5.3.0",
     "cypress": "4.10.0",
-    "cypress-cucumber-preprocessor": "4.0.0"
+    "cypress-cucumber-preprocessor": "4.0.0",
+    "cypress-multi-reporters": "^1.4.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
   },
-  "cypress-cucumber-preprocessor":{
-    "step_definitions": "cypress/support/steps"
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps",
+    "cucumberJson":{
+      "generate":true,
+      "outputFolder":"cypress/reports/cucumber-json",
+      "filePrefix":"",
+      "fileSuffix":".cucumber"
+    }
   }
 }

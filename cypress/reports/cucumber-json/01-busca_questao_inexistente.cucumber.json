@@ -1,0 +1,62 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Busca no Banco de Questões",
+    "line": 2,
+    "id": "busca-no-banco-de-questões",
+    "tags": [],
+    "uri": "01-busca_questao_inexistente.feature",
+    "elements": [
+      {
+        "id": "busca-no-banco-de-questões;busca-por-questão-inexistente",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Busca por questão inexistente",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que navego para a página de busca",
+            "result": {
+              "status": "passed",
+              "duration": 5967000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "digito 'Science: Computers' no campo de busca",
+            "result": {
+              "status": "passed",
+              "duration": 808000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "clico no botão de buscar",
+            "result": {
+              "status": "passed",
+              "duration": 2642000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "visualizo uma mensagem de erro com o texto 'No questions found.'",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

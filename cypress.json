@@ -3,5 +3,9 @@
     "baseUrl": "https://opentdb.com/",
     "baseUrlBusca":"browse.php",
     "baseUrlLogin":"login.php",
-    "baseUrlAddQuestao":"trivia_add_question.php"
+    "baseUrlAddQuestao":"trivia_add_question.php",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile":"reporter-config.json"
+    }
 }

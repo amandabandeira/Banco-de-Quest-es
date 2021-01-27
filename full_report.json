@@ -1,0 +1,223 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-01-27T00:18:22.832Z",
+    "end": "2021-01-27T00:19:30.237Z",
+    "duration": 38448,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5de78cae-9544-4d28-9135-425a0e495647",
+      "title": "",
+      "fullFile": "cypress\\integration\\02-validacao_itens_tabela_categoria.feature",
+      "file": "cypress\\integration\\02-validacao_itens_tabela_categoria.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "73488ba7-9590-4b1a-b2e2-f6c9d55bf44c",
+          "title": "Busca no Banco de Questões",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Busca de questâo pela categoria e validar que a listagems possui 25 itens e que possui paginacao na página",
+              "fullTitle": "Busca no Banco de Questões Busca de questâo pela categoria e validar que a listagems possui 25 itens e que possui paginacao na página",
+              "timedOut": null,
+              "duration": 9468,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7422790d-9a6f-4827-9951-6e61925374ff",
+              "parentUUID": "73488ba7-9590-4b1a-b2e2-f6c9d55bf44c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7422790d-9a6f-4827-9951-6e61925374ff"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9468,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "97ae2d73-c6eb-4c10-9adb-18db3a833f7d",
+      "title": "",
+      "fullFile": "cypress\\integration\\03-adicionar_nova_questao.feature",
+      "file": "cypress\\integration\\03-adicionar_nova_questao.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a185ea3f-c2d7-4a76-a3c7-c4cd1de25f5d",
+          "title": "Adicionar uma nova questão no banco de questões",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adicionar uma nova questao",
+              "fullTitle": "Adicionar uma nova questão no banco de questões Adicionar uma nova questao",
+              "timedOut": null,
+              "duration": 23922,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "e8c44dfa-53b5-46bd-8842-b8b1b76033cb",
+              "parentUUID": "a185ea3f-c2d7-4a76-a3c7-c4cd1de25f5d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e8c44dfa-53b5-46bd-8842-b8b1b76033cb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23922,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2b27a04d-c9c5-400b-a5e6-6d440f777fff",
+      "title": "",
+      "fullFile": "cypress\\integration\\01-busca_questao_inexistente.feature",
+      "file": "cypress\\integration\\01-busca_questao_inexistente.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5a346250-a4fb-4398-bb12-7365427d85a9",
+          "title": "Busca no Banco de Questões",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Busca por questão inexistente",
+              "fullTitle": "Busca no Banco de Questões Busca por questão inexistente",
+              "timedOut": null,
+              "duration": 5058,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "f1ee0df8-5819-4641-abcc-cea70965f722",
+              "parentUUID": "5a346250-a4fb-4398-bb12-7365427d85a9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f1ee0df8-5819-4641-abcc-cea70965f722"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5058,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

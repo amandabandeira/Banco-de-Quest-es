@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-01-27T00:45:07.585Z",
+    "end": "2021-01-27T00:45:18.167Z",
+    "duration": 10582,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ee3967c3-1ac3-4315-b440-d325ac92ccc8",
+      "title": "",
+      "fullFile": "cypress\\integration\\02-validacao_itens_tabela_categoria.feature",
+      "file": "cypress\\integration\\02-validacao_itens_tabela_categoria.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "997b09bc-f37a-4d6f-ab66-d823b20cf0f9",
+          "title": "Busca no Banco de Questões",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Busca de questâo pela categoria e validar que a listagems possui 25 itens e que possui paginacao na página",
+              "fullTitle": "Busca no Banco de Questões Busca de questâo pela categoria e validar que a listagems possui 25 itens e que possui paginacao na página",
+              "timedOut": null,
+              "duration": 9599,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "c59126cc-b8a7-4dec-9c5f-04e7b01c5a70",
+              "parentUUID": "997b09bc-f37a-4d6f-ab66-d823b20cf0f9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c59126cc-b8a7-4dec-9c5f-04e7b01c5a70"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9599,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
